@@ -1,0 +1,43 @@
+[2016-04-27 21:56:08 +0800] [4146] [INFO] Starting gunicorn 19.4.5
+[2016-04-27 21:56:08 +0800] [4146] [INFO] Listening at: http://0.0.0.0:8000 (4146)
+[2016-04-27 21:56:08 +0800] [4146] [INFO] Using worker: sync
+[2016-04-27 21:56:08 +0800] [4149] [INFO] Booting worker with pid: 4149
+[2016-04-27 21:57:23 +0800] [4161] [INFO] Starting gunicorn 19.4.5
+[2016-04-27 21:57:23 +0800] [4161] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 21:57:23 +0800] [4161] [ERROR] Retrying in 1 second.
+[2016-04-27 21:57:24 +0800] [4161] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 21:57:24 +0800] [4161] [ERROR] Retrying in 1 second.
+[2016-04-27 21:57:25 +0800] [4161] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 21:57:25 +0800] [4161] [ERROR] Retrying in 1 second.
+[2016-04-27 21:57:26 +0800] [4161] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 21:57:26 +0800] [4161] [ERROR] Retrying in 1 second.
+[2016-04-27 21:57:27 +0800] [4161] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 21:57:27 +0800] [4161] [ERROR] Retrying in 1 second.
+[2016-04-27 21:57:28 +0800] [4161] [ERROR] Can't connect to ('0.0.0.0', 8000)
+[2016-04-27 21:58:15 +0800] [4146] [CRITICAL] WORKER TIMEOUT (pid:4149)
+[2016-04-27 21:58:15 +0800] [4146] [INFO] Handling signal: hup
+[2016-04-27 21:58:15 +0800] [4146] [INFO] Hang up: Master
+[2016-04-27 21:58:15 +0800] [4146] [INFO] Handling signal: term
+[2016-04-27 21:58:15 +0800] [4226] [INFO] Booting worker with pid: 4226
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+[2016-04-27 21:58:45 +0800] [4146] [INFO] Shutting down: Master
+[2016-04-27 22:00:42 +0800] [1766] [INFO] Starting gunicorn 19.4.5
+[2016-04-27 22:00:42 +0800] [1766] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 22:00:42 +0800] [1766] [ERROR] Retrying in 1 second.
+[2016-04-27 22:00:43 +0800] [1766] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 22:00:43 +0800] [1766] [ERROR] Retrying in 1 second.
+[2016-04-27 22:00:44 +0800] [1766] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 22:00:44 +0800] [1766] [ERROR] Retrying in 1 second.
+[2016-04-27 22:00:45 +0800] [1766] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 22:00:45 +0800] [1766] [ERROR] Retrying in 1 second.
+[2016-04-27 22:00:46 +0800] [1766] [ERROR] Connection in use: ('0.0.0.0', 8000)
+[2016-04-27 22:00:46 +0800] [1766] [ERROR] Retrying in 1 second.
+[2016-04-27 22:00:47 +0800] [1766] [ERROR] Can't connect to ('0.0.0.0', 8000)

@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load markdown_deux_tags %}
+{% block post %}
+    {% for article in articles %}
+        <h2>
+            <a href="{% url 'article' article.pk %}">{{ article.title }}</a>
+        </h2>
+        <p class="lead">
+            keys: {{ article.keys }}
+        </p>
+        <p><span class="glyphicon glyphicon-time"></span> {{ article.created }}</p>
+        <hr>
+        {% if article.img %}
+            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+            <hr>
+        {% endif %}
+        <p>{{ article.content|markdown|striptags|truncatechars_html:50 }}</p>
+        <a class="btn btn-primary" href="{% url 'article' article.pk %}">Read More <span
+                class="glyphicon glyphicon-chevron-right"></span></a>
+
+        <hr>
+
+    {% endfor %}
+
+
+{% endblock %}
