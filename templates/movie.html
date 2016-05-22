@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+
+{% block post %}
+    <!-- 电影搜索框 -->
+    <div class="well">
+        <h4>电影搜索</h4>
+        <form action="" method="post">
+            <div class="input-group">
+                {% csrf_token %}
+                <input type="text" class="form-control" name="moviename">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+            </div>
+        </form>
+
+        <!-- /.input-group -->
+    </div>
+    {% for i in list %}
+
+        <div class="well">
+            {{ i|safe }}
+            <!-- /.input-group -->
+        </div>
+    {% endfor %}
+
+{% endblock %}

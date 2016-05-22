@@ -2,21 +2,20 @@ from django.shortcuts import render,HttpResponse
 from blog import models,forms
 import re
 from django.views.generic.edit import View
+from . import commn
 
 
 from markdownx.utils import markdownify
 # Create your views here.
-class CustomMarkdownifyView(View):
-
-    def post(self, request, *args, **kwargs):
-        compiled_markdown = markdownify(request.POST['content'])
-        return HttpResponse(compiled_markdown)
 
 
 def index(request):
     articles=models.articles.objects.order_by('-created','-edited')
     return  render(request,'index.html',locals())
 def article(request,page_number):
+    '''
+    文章内容页
+    '''
     if request.method=='POST':
         form=forms.CommonForm(request.POST)
         if form.is_valid():
@@ -29,3 +28,8 @@ def article(request,page_number):
     form=forms.CommonForm(initial={'articlesId':page_number})
     comments=allArticle.comments_set.all()
     return  render(request,'article.html',locals())
+def movieSearch(request):
+    if request.method=='POST':
+        movieName=request.POST['moviename']
+        list=commn.searchMovie(moviename=movieName,url='ed2000.com')
+    return render(request,'movie.html',locals())
