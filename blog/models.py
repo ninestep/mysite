@@ -31,3 +31,8 @@ class system(models.Model):
     title=models.CharField('网站名',max_length=20)
     meteWorld=models.CharField('SEO词',max_length=30)
     BriefIntroduction=models.TextField('简介')
+
+class movieList(models.Model):
+    title=models.CharField('电影网站',max_length=20)
+    url=models.CharField('网址',max_length=50)
+    message=models.CharField('备注',max_length=50)

@@ -31,5 +31,5 @@ def article(request,page_number):
 def movieSearch(request):
     if request.method=='POST':
         movieName=request.POST['moviename']
-        list=commn.searchMovie(moviename=movieName,url='ed2000.com')
+        lists=commn.movieList(moviename=movieName)
     return render(request,'movie.html',locals())
